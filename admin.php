@@ -13,10 +13,10 @@ $app = new \atk4\ui\App('Админка');
 $app->initLayout('Centered');
 
 $db = new
-\atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','') ;
+\atk4\data\Persistence_SQL('mysql:dbname=heroku_35a63eb77fee245;host=eu-mm-auto-fra-02-c.cleardb.net','bfa11752c77b7d','77c43c35') ;
 
 Class Friends extends \atk4\data\Model {
-  public $table ='friends' ;
+  public $table ='Maks' ;
   function init () {
 parent::init() ;
   $this->addField('name') ;
