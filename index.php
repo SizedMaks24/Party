@@ -168,8 +168,9 @@ Class Friends extends \atk4\data\Model {
 parent::init() ;
   $this->addField('name') ;
   $this->addField('surname') ;
-  $this->addField('phone_number',['default'=>'+371']) ;
+
   $this->addField('email') ;
+    $this->addField('phone_number',['default'=>'+371']) ;
   $this->addField('birthday',['type'=>'date']) ;
   $this->addField('notes',['type'=>'text']) ;
   $this->addField('age') ;
@@ -187,7 +188,7 @@ $form->onSubmit(function($form){
 	  $notifier->setColor('pink')
 	  ->setPosition('bottomLeft')
 	  ->setWidth('25')
-	  ->setContent('Mi tancuem pod minimal da da da')
+	  ->setContent('Forca Atletiko Madrid')
 	  ->setIcon(' wheelchair ' )
 	  ->setTransition('flash') ;
 
