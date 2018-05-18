@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 require 'vendor/autoload.php';
 require 'app.php';
 $db = new
@@ -145,9 +145,9 @@ $laima4->color='blue';
 $total = $laima4->AllPrice($weight);
 $label4 = $app->add(['Label', $laima4->name.' '. $total, $laima4->color.' massive', 'detail'=>'Cena par kg '. $laima4->price, 'image'=>'https://www.birojs.lv/global/uploads/images/products/8-02-003.bg.jpg']);*/
 
-  If(isset($_SESSION['name'])) {
+/*  If(isset($_SESSION['name'])) {
     $text=$app->add(['Text', $_SESSION['name']]);
-  }
+  }*/
 
 $button = $app->add(['Button', 'Info', 'blue']);
 $button->link(['info']);
