@@ -169,7 +169,7 @@ $form->onSubmit(function($form) {
            ->setTransition('bounce')
            ->setIcon('smile outline');*/
 
-  return /*$notifier;*/new \atk4\ui\jsExpression('document.location = "success.php"');
+  return new \atk4\ui\jsExpression('document.location = "success.php"');
 
 } else {
   return new \atk4\ui\jsExpression('document.location = "error.php"');
