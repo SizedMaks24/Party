@@ -1,10 +1,12 @@
 
+
 <?php
-require 'vendor/autoload.php' ;
+/*require 'vendor/autoload.php' ;
 require 'app.php' ;
 
 
 $app = new App('public') ;
+
 
 
 /*$button1 = $app ->add ('Button') ;
@@ -159,7 +161,7 @@ $Adidas4->colour = 'Blue' ;
 $Adidas4->price = '$125' ;
 $label4 = $app->add(['Label',$Adidas4->name,$Adidas4->colour]);*/
 
-$db = new
+/*$db = new
 \atk4\data\Persistence_SQL('mysql:dbname=heroku_35a63eb77fee245;host=eu-mm-auto-fra-02-c.cleardb.net','bfa11752c77b7d','77c43c35') ;
 
 Class Friends extends \atk4\data\Model {
@@ -168,7 +170,6 @@ Class Friends extends \atk4\data\Model {
 parent::init() ;
   $this->addField('name') ;
   $this->addField('surname') ;
-
   $this->addField('email') ;
     $this->addField('phone_number',['default'=>'+371']) ;
   $this->addField('birthday',['type'=>'date']) ;
@@ -206,6 +207,7 @@ $grid = $app->layout->add('Grid') ;
 $grid->setModel(new Friends($db)) ;
 $crud =$app->layout->add('CRUD') ;
 $crud->setModel(new Friends($db)) ;
+
 /*
 $menu = $app->add('menu') ;
 $menu->addItem('phone','https://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note-8-sm-n950.jpg');
