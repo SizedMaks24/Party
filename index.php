@@ -158,7 +158,7 @@ $button2->link(['check']);
 $form = $app->layout->add('Form');
 $form->setModel(new Friends($db));
 $form->onSubmit(function($form) {
-  $_SESSION['name']=$form->model['name'];
+  /*$_SESSION['name']=$form->model['name'];
   If($form->model['age']>14) {
   $form->model->save();
 /*  $notifier = new \atk4\ui\jsNotify();
