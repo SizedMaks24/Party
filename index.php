@@ -12,7 +12,7 @@ parent::init() ;
   $this->addField('name') ;
   $this->addField('surname') ;
   $this->addField('email') ;
-    $this->addField('phone_number',['default'=>'+371']) ;
+  $this->addField('phone_number',['default'=>'+371']) ;
   $this->addField('birthday',['type'=>'date']) ;
   $this->addField('notes',['type'=>'text']) ;
   $this->addField('age') ;
@@ -153,7 +153,7 @@ $button = $app->add(['Button', 'Info', 'blue']);
 $button->link(['info']);
 
 $button2 = $app->layout->add(['Button', 'Admin', 'purple']);
-$button2->link(['check']);
+$button2->link(['admin']);
 
 $form = $app->layout->add('Form');
 $form->setModel(new Friends($db));
